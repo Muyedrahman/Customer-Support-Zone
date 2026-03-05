@@ -1,15 +1,16 @@
 import './App.css'
+import Navbar from './components/Navbar';
 
 function App() {
  
 
   return (
     <>
-    
-      <h1>I am heair</h1>
-     
+      <header>
+        <Navbar />
+      </header>
     </>
-  )
+  );
 }
 
 export default App
