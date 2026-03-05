@@ -1,10 +1,11 @@
 import React, { use, useState } from "react";
-// import CountBox from "./CountBox";
+import CountBox from "./CountBox";
 import Container from "./Container";
 import TicketsCard from "./cards/TicketsCard";
 import TaskStatus from "./cards/TaskStatus";
 import { toast } from "react-toastify";
 import ResolvedTask from "./cards/ResolvedTask";
+
 
 const CountContainer = ({ promise }) => {
   const count = use(promise);
@@ -40,11 +41,11 @@ const CountContainer = ({ promise }) => {
 
   return (
     <div>
-      {/* <CountBox
+      <CountBox
         ticketTotal={tickets.length}
         countTotal={count.length}
         resolvedTotal={resolvedTask.length}
-      /> */}
+      />
 
       <Container>
         {/* grid-cols-12 */}
