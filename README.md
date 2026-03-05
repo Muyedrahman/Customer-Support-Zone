@@ -1,16 +1,25 @@
-# React + Vite
+1.Repository link: https://github.com/Muyedrahman/Customer-Support-Zone
+2.Live link:  https://loquacious-sorbet-f59f5b.netlify.app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Create a README file to answer the following question-
 
-Currently, two official plugins are available:
+1/What is JSX, and why is it used?
+-->JSX- JavaScript XML. সহজ গঠন ও পঠনযোগ্যতা, লজিক ও মার্কআপের সমন্বয়, ডাইনামিক কন্টেন্ট, নিরাপত্তা, উন্নত পারফরম্যান্স .
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2/What is the difference between State and Props?
+-->
+Props: এটি অনেকটা ফাংশনের প্যারামিটারের মতো। কোনো কম্পোনেন্টকে বাইরে (Parent) থেকে যখন কোনো ডেটা পাঠানো হয়, তাকে Props বলে। এটি Read-only, অর্থাৎ কম্পোনেন্ট নিজে এটি পরিবর্তন করতে পারে না।
+State: এটি কম্পোনেন্টের নিজস্ব মেমোরি। কোনো ডেটা যখন কম্পোনেন্টের ভেতরেই তৈরি হয় এবং সময়ের সাথে পরিবর্তন হওয়ার প্রয়োজন পড়ে (যেমন: কাউন্টার বা ইনপুট বক্স), তখন State ব্যবহার করা হয়। এটি পরিবর্তন করা যায়।
 
-## React Compiler
+3/What is the useState hook, and how does it work?
+-->useState হলো রিঅ্যাক্টের একটি ফাংশন যা ফাংশনাল কম্পোনেন্টে State যোগ করতে সাহায্য করে।
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+4/How can you share state between components in React?
+--> রিঅ্যাক্টে স্টেট শেয়ার করার প্রধান উপায়গুলো হলো:
+Lifting State Up, Context API, State Management Libraries .
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+5/How is event handling done in React?
+--> রিঅ্যাক্টে ইভেন্ট হ্যান্ডলিং HTML-এর মতোই, তবে কিছু পার্থক্য আছে:
+camelCase: ইভেন্টের নাম camelCase-এ লিখতে হয় (যেমন: onClick, onChange)।
+Function as Handler: স্ট্রিংয়ের বদলে কার্লি ব্রেসের ভেতর ফাংশন পাস করতে হয় (যেমন: {handleClick})।
+e.preventDefault(): ডিফল্ট আচরণ বন্ধ করতে এটি ব্যবহার করা হয়।
